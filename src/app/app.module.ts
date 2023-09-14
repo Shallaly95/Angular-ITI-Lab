@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { RegistrationComponent } from './Component/Registration/Registration.component';
 import { LoginComponent } from './Component/Login/Login.component';
 import { NavigationComponent } from './Component/Navigation/Navigation.component';
+import { NotfoundComponent } from './Component/notfound/notfound.component';
+import { HttpClientModule} from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -21,12 +24,16 @@ import { NavigationComponent } from './Component/Navigation/Navigation.component
     ProductsComponent,
     RegistrationComponent,
     LoginComponent,
-    NavigationComponent
+    NavigationComponent,
+    NotfoundComponent,
+  
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
